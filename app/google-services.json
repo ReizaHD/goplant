@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "644660703149",
+    "firebase_url": "https://go-plant-d8312-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "go-plant-d8312",
+    "storage_bucket": "go-plant-d8312.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:644660703149:android:cab8b378bfa77d15c2bb24",
+        "android_client_info": {
+          "package_name": "com.example.goplant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "644660703149-o3krftrd5cmd503rq0q67k42dtkqlgfa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGa4jvbrwOEHmM9tchCcXnMvv0oo367L4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "644660703149-o3krftrd5cmd503rq0q67k42dtkqlgfa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

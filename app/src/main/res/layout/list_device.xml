@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:paddingLeft="10dp"
+    android:paddingTop="5dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#acc5e0ef"
+        android:orientation="vertical"
+        android:padding="7dp">
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/nomor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="0dp"
+                android:paddingBottom="5dp"
+                android:textStyle="bold"
+                android:textColor="#250000"
+                android:text="1." />
+
+            <RelativeLayout
+                android:id="@+id/info"
+                android:layout_toRightOf="@id/nomor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/textNama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Device"
+                    android:textColor="#250000"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/textTemp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textNama"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Suhu Udara : "
+                    android:textColor="#250000" />
+                <TextView
+                    android:id="@+id/tempVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textNama"
+                    android:layout_toRightOf="@+id/textTemp"
+                    android:padding="5dp"
+                    android:text="N/A"
+                    android:textColor="#250000" />
+                <TextView
+                    android:id="@+id/textHumid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textTemp"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Kelembapan Udara :"
+                    android:textColor="#250000" />
+                <TextView
+                    android:id="@+id/humidVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textTemp"
+                    android:layout_toRightOf="@+id/textHumid"
+                    android:padding="5dp"
+                    android:text="N/A"
+                    android:textColor="#250000" />
+                <TextView
+                    android:id="@+id/textSoil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textHumid"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Kelembapan Tanah :"
+                    android:textColor="#250000" />
+                <TextView
+                    android:id="@+id/soilVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textHumid"
+                    android:layout_toRightOf="@+id/textSoil"
+                    android:padding="5dp"
+                    android:text="N/A"
+                    android:textColor="#250000" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/alert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/info"
+                android:layout_marginStart="5dp">
+                <ImageView
+                    android:id="@+id/error"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_error_outline_48"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/error"
+                    android:layout_alignBottom="@+id/error"
+                    android:layout_alignTop="@+id/error"
+                    android:text="Device Tidak Aktif"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
